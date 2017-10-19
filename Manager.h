@@ -6,8 +6,9 @@
 #define INHERITANCE_MANAGER_H
 
 #include "cmake-build-debug/Employee.h"
+#include "Student.h"
 
-class Manager : public Employee
+class Manager : private Employee, private Student
 {
 private:
     string title;   //"President" etc

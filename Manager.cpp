@@ -4,8 +4,6 @@
 
 #include "Manager.h"
 
-using namespace std;
-
 void Manager::setData()
 {
     Employee::setData();
@@ -14,6 +12,7 @@ void Manager::setData()
     cin.ignore();
     cout<<"\n Enter gold club dues: ";
     cin>>dues;
+    Student::setEducation();
 }
 
 void Manager::getData()
@@ -21,5 +20,6 @@ void Manager::getData()
     Employee::getData();
     cout<<"\n Title: "<<title;
     cout<<"\n Golf dues: "<<dues;
+    Student::getEducation();
 
 }
